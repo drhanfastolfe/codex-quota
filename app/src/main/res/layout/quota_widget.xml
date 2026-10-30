@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/widget_root" android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@id/widget_title" android:layout_width="match_parent"
+        android:layout_height="20dp" android:text="›_ CUOTA DISPONIBLE · BETA"
+        android:textSize="11sp" android:fontFamily="monospace" android:textStyle="bold"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9dp"
+        android:autoSizeMaxTextSize="11sp" android:autoSizeStepGranularity="1dp"
+        android:includeFontPadding="false"
+        android:textColor="#f5f5f5" android:gravity="center_vertical"
+        android:maxLines="1" android:scrollHorizontally="false" android:ellipsize="end" />
+    <LinearLayout android:orientation="horizontal" android:baselineAligned="false"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/widget_quota_left" android:orientation="vertical"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:paddingEnd="5dp" android:minHeight="56dp">
+            <TextView android:id="@+id/widget_primary_label" style="@style/WidgetWindowLabel"
+                android:text="5 horas · libre" />
+            <TextView android:id="@id/widget_primary" style="@style/WidgetPercent"
+                android:text="—" />
+            <ProgressBar android:id="@id/widget_primary_bar" style="@style/WidgetQuotaBar" />
+            <ProgressBar android:id="@id/widget_primary_bar_amber" style="@style/WidgetQuotaBar.Amber" />
+            <ProgressBar android:id="@id/widget_primary_bar_red" style="@style/WidgetQuotaBar.Red" />
+            <TextView android:id="@id/widget_primary_reset" style="@style/WidgetRenewal"
+                android:text="Abre la app para conectar" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/widget_quota_right" android:orientation="vertical"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:paddingStart="5dp" android:minHeight="56dp">
+            <TextView android:id="@+id/widget_secondary_label" style="@style/WidgetWindowLabel"
+                android:text="Semanal · libre" />
+            <TextView android:id="@id/widget_secondary" style="@style/WidgetPercent" android:text="—" />
+            <ProgressBar android:id="@id/widget_secondary_bar" style="@style/WidgetQuotaBar" />
+            <ProgressBar android:id="@id/widget_secondary_bar_amber" style="@style/WidgetQuotaBar.Amber" />
+            <ProgressBar android:id="@id/widget_secondary_bar_red" style="@style/WidgetQuotaBar.Red" />
+            <TextView android:id="@id/widget_secondary_reset" style="@style/WidgetRenewal" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/widget_credits" android:layout_width="match_parent"
+        android:layout_height="16dp" android:text="RESETS · —" android:textSize="10sp"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9dp"
+        android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp"
+        android:includeFontPadding="false"
+        android:textColor="#a3a3a3" android:fontFamily="monospace" android:maxLines="1" android:scrollHorizontally="false"
+        android:gravity="center_vertical" android:ellipsize="end" />
+    <ListView android:id="@id/widget_reset_list" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:minHeight="22dp"
+        android:divider="@null" android:scrollbars="vertical" android:scrollbarStyle="insideOverlay"
+        android:fadingEdgeLength="0dp" />
+    <TextView android:id="@id/widget_status" android:layout_width="match_parent"
+        android:layout_height="16dp" android:text="Abre la app para conectar"
+        android:textSize="10sp" android:textColor="#a3a3a3" android:maxLines="1" android:scrollHorizontally="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9dp"
+        android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp"
+        android:ellipsize="end" android:gravity="center_vertical" android:includeFontPadding="false" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="48dp" android:layout_marginTop="2dp">
+        <TextView android:id="@id/widget_refresh" style="@style/WidgetAction"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:text="↻ Actualizar" android:contentDescription="Actualizar cuota y resets" />
+        <TextView android:id="@id/widget_reset" style="@style/WidgetAction"
+            android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="4dp"
+            android:text="Reset…" android:contentDescription="Abrir confirmación del reset que caduca antes" />
+        <ImageView android:id="@id/widget_theme" android:layout_width="48dp"
+            android:layout_height="48dp" android:layout_marginStart="4dp"
+            android:padding="15dp" android:background="@drawable/widget_button"
+            android:src="@drawable/ic_theme" android:contentDescription="Elegir tema del widget" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#f7f7f7</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#181818</item>
+        <item name="android:statusBarColor">#f7f7f7</item>
+        <item name="android:navigationBarColor">#f7f7f7</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="WidgetDialogTheme" parent="@style/AppTheme">
+        <item name="android:backgroundDimAmount">0.25</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="WidgetQuotaBar" parent="@android:style/Widget.Material.ProgressBar.Horizontal">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4.0dp</item>
+        <item name="android:layout_marginTop">1.0dp</item>
+        <item name="android:layout_marginBottom">1.0dp</item>
+        <item name="android:maxHeight">4.0dp</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">0.0dp</item>
+        <item name="android:progressTint">#888888</item>
+        <item name="android:progressBackgroundTint">#33666666</item>
+    </style>
+    <style name="WidgetQuotaBar.Amber" parent="@style/WidgetQuotaBar">
+        <item name="android:progressTint">#b98522</item>
+        <item name="android:progressBackgroundTint">#44b98522</item>
+    </style>
+    <style name="WidgetQuotaBar.Red" parent="@style/WidgetQuotaBar">
+        <item name="android:progressTint">#cf524b</item>
+        <item name="android:progressBackgroundTint">#44cf524b</item>
+    </style>
+</resources>

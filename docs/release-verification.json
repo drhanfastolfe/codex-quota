@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0-beta.1",
+  "version_code": 8,
+  "package": "es.codexquota.mobile.beta",
+  "min_sdk": 26,
+  "target_sdk": 35,
+  "apk": "releases/0.2.0-beta.1/codex-quota-0.2.0-beta.1.apk",
+  "apk_bytes": 1775521,
+  "apk_sha256": "d2401733fcaa5dda0afa58e61ff0cfaa07be103cfead202c1867e0808a7e3356",
+  "signing_certificate_sha256": "6652f1dc8f7d1ad66d636f47a9a1a8bcfaa190cc881cccb1e3e010296b59805e",
+  "signature_verified": true,
+  "zipalign_4_byte_and_16k_native_pages": true,
+  "debuggable": false,
+  "native_libraries": [],
+  "exact_alarm_permission": false,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.POST_NOTIFICATIONS",
+    "es.codexquota.mobile.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "physical_device_test": "not_performed",
+  "checked_at_utc": "2026-10-30T17:58:37.177433+00:00",
+  "unit_and_integration_tests": {
+    "tests": 93,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint_severity_counts": {
+    "Warning": 69,
+    "Information": 1
+  },
+  "build_source_manifest_sha256": "363bd92df2be82c5de989b7e5cbcfde4fc4c6a7060e97e5496aa82c21b7b9c4a",
+  "source_unchanged_during_build": true
+}

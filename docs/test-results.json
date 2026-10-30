@@ -1,0 +1,111 @@
+{
+  "version": "0.2.0-beta.1",
+  "framework": "JUnit 4 + Robolectric 4.14.1 / Android API 35 + native graphics",
+  "tests": 93,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": [
+    {
+      "name": "es.codexquota.mobile.AlertDeliveryIntegrationTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.ResetSafetyIntegrationTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.VisualPreviewIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.WidgetAndSchedulingIntegrationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.WidgetLayoutIntegrationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.AlertPoliciesTest",
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.ConfirmedConsumptionTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.DeviceLoginTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.HttpTransportTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.QueryRetryPolicyTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.QuotaClientReadSafetyTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.QuotaModelsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.QuotaPresentationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "es.codexquota.mobile.core.WidgetLayoutPolicyTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "real_accounts_used": false,
+  "live_api_requests": false,
+  "physical_device_tested": false
+}

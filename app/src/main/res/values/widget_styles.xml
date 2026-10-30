@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WidgetWindowLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">9dp</item>
+        <item name="android:autoSizeMaxTextSize">11sp</item>
+        <item name="android:autoSizeStepGranularity">1dp</item>
+        <item name="android:textColor">#a3a3a3</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="WidgetPercent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">16dp</item>
+        <item name="android:autoSizeMaxTextSize">26sp</item>
+        <item name="android:autoSizeStepGranularity">1dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#f5f5f5</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="WidgetRenewal" parent="WidgetWindowLabel">
+        <item name="android:layout_height">14dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:autoSizeMaxTextSize">10sp</item>
+    </style>
+    <style name="MiniWidgetWindowLabel" parent="WidgetWindowLabel">
+        <item name="android:layout_height">12dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:autoSizeMaxTextSize">10sp</item>
+    </style>
+    <style name="MiniWidgetPercent" parent="WidgetPercent">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:autoSizeMinTextSize">14dp</item>
+        <item name="android:autoSizeMaxTextSize">21sp</item>
+    </style>
+    <style name="MiniWidgetRenewal" parent="WidgetRenewal">
+        <item name="android:layout_height">12dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:autoSizeMaxTextSize">10sp</item>
+    </style>
+    <style name="WidgetAction">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:background">@drawable/widget_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#f5f5f5</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

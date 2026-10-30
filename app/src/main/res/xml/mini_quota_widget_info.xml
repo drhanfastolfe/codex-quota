@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="140.0dp" android:minHeight="78.0dp" android:updatePeriodMillis="0" android:initialLayout="@layout/mini_quota_widget" android:configure="es.codexquota.mobile.WidgetThemeActivity" android:resizeMode="horizontal|vertical" android:minResizeWidth="140.0dp" android:minResizeHeight="78.0dp" android:widgetCategory="home_screen" android:widgetFeatures="reconfigurable|configuration_optional" android:previewLayout="@layout/mini_quota_widget" android:targetCellWidth="2" android:targetCellHeight="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

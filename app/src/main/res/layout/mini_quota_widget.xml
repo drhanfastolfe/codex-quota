@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mini_root" android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@id/mini_title" android:layout_width="match_parent"
+        android:layout_height="14dp" android:text="›_ CODEX BETA"
+        android:textSize="10sp" android:textColor="#a3a3a3" android:maxLines="1" android:scrollHorizontally="false"
+        android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9dp"
+        android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1dp"
+        android:ellipsize="end" android:includeFontPadding="false" android:gravity="center_vertical" />
+    <LinearLayout android:orientation="horizontal" android:baselineAligned="false"
+        android:gravity="center_vertical" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@id/mini_quota_left" android:orientation="vertical"
+            android:gravity="center_vertical" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:paddingEnd="3dp" android:minHeight="48dp">
+            <TextView android:id="@+id/mini_primary_label" style="@style/MiniWidgetWindowLabel"
+                android:text="5 h" />
+            <TextView android:id="@id/mini_primary" style="@style/MiniWidgetPercent" android:text="—" />
+            <ProgressBar android:id="@id/mini_primary_bar" style="@style/WidgetQuotaBar" />
+            <ProgressBar android:id="@id/mini_primary_bar_amber" style="@style/WidgetQuotaBar.Amber" />
+            <ProgressBar android:id="@id/mini_primary_bar_red" style="@style/WidgetQuotaBar.Red" />
+            <TextView android:id="@id/mini_primary_reset" style="@style/MiniWidgetRenewal"
+                android:text="Abre la app" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/mini_quota_right" android:orientation="vertical"
+            android:gravity="center_vertical" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:paddingStart="3dp" android:minHeight="48dp">
+            <TextView android:id="@+id/mini_secondary_label" style="@style/MiniWidgetWindowLabel"
+                android:text="Semanal" />
+            <TextView android:id="@id/mini_secondary" style="@style/MiniWidgetPercent" android:text="—" />
+            <ProgressBar android:id="@id/mini_secondary_bar" style="@style/WidgetQuotaBar" />
+            <ProgressBar android:id="@id/mini_secondary_bar_amber" style="@style/WidgetQuotaBar.Amber" />
+            <ProgressBar android:id="@id/mini_secondary_bar_red" style="@style/WidgetQuotaBar.Red" />
+            <TextView android:id="@id/mini_secondary_reset" style="@style/MiniWidgetRenewal" android:text="" />
+        </LinearLayout>
+        <TextView android:id="@id/mini_refresh" android:layout_width="48dp"
+            android:layout_height="48dp" android:text="↻" android:textSize="24sp"
+            android:gravity="center" android:textColor="#a3a3a3" android:visibility="gone"
+            android:contentDescription="Actualizar cuota" />
+        <ImageView android:id="@id/mini_theme" android:layout_width="48dp"
+            android:layout_height="48dp" android:padding="15dp" android:src="@drawable/ic_theme"
+            android:visibility="gone" android:contentDescription="Elegir tema del widget" />
+    </LinearLayout>
+</LinearLayout>
